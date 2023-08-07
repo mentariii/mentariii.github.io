@@ -10,29 +10,51 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+        <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-xl font-semibold">Mentari Dwi Prastiwi</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-white hover:text-blue-200">Home</a></li>
+                <li><a href="#projects" class="text-white hover:text-blue-200">Projects</a></li>
+                <li><a href="#contact" class="text-white hover:text-blue-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
     <div class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
-    <h1 class="text-4xl font-bold mb-4">Mentari Dwi Prastiwi</h1>
-    <p class="text-lg mb-8">Front-end Developer</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project Cards -->
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
-            <h2 class="text-xl font-semibold mb-2">Project 1</h2>
-            <p class="text-gray-600 mb-4">Description of Project 1</p>
-            <a href="#" class="text-blue-500">View Details</a>
+        <h1 class="text-4xl font-bold mb-4">Mentari Dwi Prastiwi</h1>
+        <p class="text-lg mb-8">Front-end Developer</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects">
+            <!-- Project Cards -->
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                <h2 class="text-xl font-semibold mb-2">Project 1</h2>
+                <p class="text-gray-600 mb-4">Description of Project 1</p>
+                <a href="#" class="text-blue-500">View Details</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                <h2 class="text-xl font-semibold mb-2">Project 2</h2>
+                <p class="text-gray-600 mb-4">Description of Project 2</p>
+                <a href="#" class="text-blue-500">View Details</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+                <h2 class="text-xl font-semibold mb-2">Project 3</h2>
+                <p class="text-gray-600 mb-4">Description of Project 3</p>
+                <a href="#" class="text-blue-500">View Details</a>
+            </div>
+            <!-- Add more project cards here -->
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
-            <h2 class="text-xl font-semibold mb-2">Project 2</h2>
-            <p class="text-gray-600 mb-4">Description of Project 2</p>
-            <a href="#" class="text-blue-500">View Details</a>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
-            <h2 class="text-xl font-semibold mb-2">Project 3</h2>
-            <p class="text-gray-600 mb-4">Description of Project 3</p>
-            <a href="#" class="text-blue-500">View Details</a>
-        </div>
-        <!-- Add more project cards here -->
     </div>
-</div>
+
+    <!-- Contact Section -->
+    <div class="bg-blue-500 py-16 text-white" id="contact">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <p class="mb-8">Feel free to reach out to me if you'd like to collaborate or have any inquiries.</p>
+            <a href="mailto:mentaridwip@example.com" class="bg-white text-blue-500 py-2 px-4 rounded-full hover:bg-blue-100 hover:text-blue-700 transition duration-300">Email Me</a>
+        </div>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init();
