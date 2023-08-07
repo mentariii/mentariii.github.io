@@ -3,66 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.css">
     <title>Portofolio Mentari Dwi Prastiwi</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link to AOS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-blue-500 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-semibold">Mentari Dwi Prastiwi</h1>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:text-blue-200">Tentang Saya</a></li>
-                    <li><a href="#portfolio" class="hover:text-blue-200">Portofolio</a></li>
-                    <li><a href="#contact" class="hover:text-blue-200">Kontak</a></li>
-                </ul>
-            </nav>
+    <div class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-4xl font-bold mb-4">Mentari Dwi Prastiwi</h1>
+    <p class="text-lg mb-8">Front-end Developer</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Cards -->
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h2 class="text-xl font-semibold mb-2">Project 1</h2>
+            <p class="text-gray-600 mb-4">Description of Project 1</p>
+            <a href="#" class="text-blue-500">View Details</a>
         </div>
-    </header>
-
-    <section id="about" class="py-16">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-semibold mb-4" data-aos="fade-up">Tentang Saya</h2>
-            <p class="text-gray-700" data-aos="fade-up" data-aos-delay="150">Saya adalah seorang desainer kreatif yang memiliki minat dalam desain grafis dan pengembangan web. Saya percaya bahwa desain dapat mengubah dunia dan menciptakan pengalaman yang menakjubkan bagi pengguna.</p>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h2 class="text-xl font-semibold mb-2">Project 2</h2>
+            <p class="text-gray-600 mb-4">Description of Project 2</p>
+            <a href="#" class="text-blue-500">View Details</a>
         </div>
-    </section>
-
-    <section id="portfolio" class="bg-gray-100 py-16">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-semibold mb-8" data-aos="fade-up">Portofolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
-                    <img src="project1.jpg" alt="Proyek 1" class="mb-4">
-                    <h3 class="text-lg font-semibold mb-2">Proyek 1</h3>
-                    <p class="text-gray-700">Deskripsi proyek 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="150">
-                    <img src="project2.jpg" alt="Proyek 2" class="mb-4">
-                    <h3 class="text-lg font-semibold mb-2">Proyek 2</h3>
-                    <p class="text-gray-700">Deskripsi proyek 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <!-- Tambahkan lebih banyak proyek di sini -->
-            </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+            <h2 class="text-xl font-semibold mb-2">Project 3</h2>
+            <p class="text-gray-600 mb-4">Description of Project 3</p>
+            <a href="#" class="text-blue-500">View Details</a>
         </div>
-    </section>
+        <!-- Add more project cards here -->
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
-    <section id="contact" class="py-16">
-        <div class="container mx-auto text-center">
-            <h2 class="text-2xl font-semibold mb-4" data-aos="fade-up">Kontak</h2>
-            <p class="text-gray-700" data-aos="fade-up" data-aos-delay="150">Jika Anda tertarik bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya melalui email di <a href="mailto:mentari@example.com" class="text-blue-500 hover:underline">mentari@example.com</a>.</p>
-        </div>
-    </section>
-
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2023 Mentari. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- Your content will go here -->
 </body>
 </html>
