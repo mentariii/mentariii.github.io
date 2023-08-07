@@ -3,123 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portofolio Mentari</title>
-  <style>
-    /* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header Styles */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* Section Styles */
-section {
-    padding: 20px;
-}
-
-section h2 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-/* Portfolio Styles */
-.portfolio-item {
-    margin-bottom: 20px;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    border: 1px solid #ddd;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-  </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.css">
+    <title>Portofolio Mentari Dwi Prastiwi</title>
 </head>
 <body>
-    <header>
-        <h1>Mentari</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#portfolio">Portofolio</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-semibold">Mentari Dwi Prastiwi</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-200">Tentang Saya</a></li>
+                    <li><a href="#portfolio" class="hover:text-blue-200">Portofolio</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang desainer kreatif yang memiliki minat dalam <span>desain grafis</span> dan <span>pengembangan web</span>. Saya percaya bahwa desain dapat mengubah dunia dan menciptakan pengalaman yang menakjubkan bagi pengguna.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portofolio</h2>
-        <div class="portfolio-item">
-            <img src="project1.jpg" alt="Proyek 1">
-            <h3>Proyek 1</h3>
-            <p>Deskripsi proyek 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4" data-aos="fade-up">Tentang Saya</h2>
+            <p class="text-gray-700" data-aos="fade-up" data-aos-delay="150">Saya adalah seorang desainer kreatif yang memiliki minat dalam desain grafis dan pengembangan web. Saya percaya bahwa desain dapat mengubah dunia dan menciptakan pengalaman yang menakjubkan bagi pengguna.</p>
         </div>
-        <div class="portfolio-item">
-            <img src="project2.jpg" alt="Proyek 2">
-            <h3>Proyek 2</h3>
-            <p>Deskripsi proyek 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <section id="portfolio" class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-8" data-aos="fade-up">Portofolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                    <img src="project1.jpg" alt="Proyek 1" class="mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Proyek 1</h3>
+                    <p class="text-gray-700">Deskripsi proyek 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="150">
+                    <img src="project2.jpg" alt="Proyek 2" class="mb-4">
+                    <h3 class="text-lg font-semibold mb-2">Proyek 2</h3>
+                    <p class="text-gray-700">Deskripsi proyek 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <!-- Tambahkan lebih banyak proyek di sini -->
+            </div>
         </div>
-        <!-- Tambahkan lebih banyak proyek di sini -->
     </section>
 
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Jika Anda tertarik bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya melalui email di <a href="mailto:mentari@example.com">mentari@example.com</a>.</p>
+    <section id="contact" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-semibold mb-4" data-aos="fade-up">Kontak</h2>
+            <p class="text-gray-700" data-aos="fade-up" data-aos-delay="150">Jika Anda tertarik bekerja sama atau memiliki pertanyaan, jangan ragu untuk menghubungi saya melalui email di <a href="mailto:mentari@example.com" class="text-blue-500 hover:underline">mentari@example.com</a>.</p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Mentari. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Mentari. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
