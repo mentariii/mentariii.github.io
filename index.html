@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="shorcut icon" href="assets/icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Mentari Dwi </title>
+  </head>
+  <nav>
+    <div class="nav-container">
+
+        <!-- 
+          Logo dengan animasi zoom-in
+          data-aos-duration: 1500ms untuk animasi yang smooth 
+        -->
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Mentari<span> Dwi</span> Prastiwi
+        </div>
+
+        <!-- 
+          Navigation Links
+          - Menggunakan fade-up animation dengan delays bertingkat
+          - Active class untuk halaman yang sedang aktif 
+        -->
+        <div class="links">
+            <div class="link active" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a
+                    href="index.html">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a
+                    href="about.html">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a
+                    href="skill.html">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a
+                    href="service.html">Service</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a
+                    href="contact.html">Contact</a></div>
+        </div>
+    </div>
+
+ 
+    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+    <div class="dropdown">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skill.html">Skills</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+
+
+<section>
+  <div class="main-container">
+      <div class="content">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+              <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" 
+                  style="font-size: 2.5rem; font-weight: bold; margin: 0;">
+                  Hey I'm <span>Mentari</span>
+              </h1>
+
+              <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" 
+                  class="typewriter" 
+                  style="font-size: 2rem; font-weight: bold; display: flex; align-items: center; gap: 5px;">
+                  I'm a <span class="typewriter-text"></span>
+                  <label class="cursor" 
+                      style="font-weight: bold; font-size: 2rem; display: inline-block; color: #333; animation: blink 0.7s infinite;">
+                      |
+                  </label>
+              </div>
+
+              <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100" 
+                  style="max-width: 600px; margin: 0;">
+                  I am an Informatics Engineering student at Universitas Boyolali with skills in designing and implementing efficient user interfaces for websites and applications.
+              </p>
+          </div>
+
+          <style>
+          @keyframes blink {
+              50% { opacity: 0; }
+          }
+          </style>
+
+          <!-- Flexbox untuk Social Links dan Button, dengan Tombol di Bawah -->
+          <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+              <div class="social-links" style="display: flex; gap: 15px;">
+                  <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" style="font-size: 2rem; color: #0077b5;">
+                      <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400" style="font-size: 2rem; color: #333;">
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" style="font-size: 2rem; color: #1877f2;">
+                      <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600" style="font-size: 2rem; color: #1da1f2;">
+                      <i class="fa-brands fa-twitter"></i>
+                  </a>
+              </div>
+
+              <!-- Tombol Download CV -->
+              <div class="btn" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="1800">
+                  <button style="padding: 5px; font-size: 1.2rem; background-color: #7149C6; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%; max-width: 300px;">
+                      Download CV
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div class="image" data-aos="zoom-in" data-aos-duration="3000">
+          <img src="./assets/new.jpg" alt="">
+      </div>
+  </div>
+</section>
+
+<div class="services-container" style="width: 100%; min-height: 90vh; display: flex; justify-content: center; align-items: center; padding: 2rem;">
+  <div class="services-content" style="width: 80%; max-width: 1200px; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); border-radius: 20px; padding: 3rem; color: white;">
+      <div class="services-header" data-aos="fade-down" data-aos-duration="1500" style="text-align: center; margin-bottom: 3rem;">
+          <h1 style="font-size: 2.5rem; color: #f1f1f1; text-shadow: 0 0 10px #7149C6; margin-bottom: 1rem;">My Services</h1>
+      </div>
+      <div class="services-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+          <!-- Web Development -->
+          <div class="service-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" style="background: rgba(113, 73, 198, 0.1); border-radius: 15px; padding: 2rem; text-align: center; transition: all 0.3s ease; cursor: pointer;">
+              <div class="service-icon" style="font-size: 3rem; color: #7149C6; margin-bottom: 1.5rem;">
+                  <i class="fas fa-code"></i>
+              </div>
+              <h3 class="service-title" style="font-size: 1.5rem; color: #7149C6; margin-bottom: 1rem;">Web Development</h3>
+              <p class="service-description" style="font-size: 0.9rem; line-height: 1.6; color: #cccccc;">Custom website development using modern technologies and best practices. Responsive design, optimized performance, and clean code.</p>
+          </div>
+
+          <!-- UI/UX Design -->
+          <div class="service-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300" style="background: rgba(113, 73, 198, 0.1); border-radius: 15px; padding: 2rem; text-align: center; transition: all 0.3s ease; cursor: pointer;">
+              <div class="service-icon" style="font-size: 3rem; color: #7149C6; margin-bottom: 1.5rem;">
+                  <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3 class="service-title" style="font-size: 1.5rem; color: #7149C6; margin-bottom: 1rem;">UI/UX Design</h3>
+              <p class="service-description" style="font-size: 0.9rem; line-height: 1.6; color: #cccccc;">User-centered design solutions that enhance user experience. Wireframing, prototyping, and intuitive interface design.</p>
+          </div>
+
+          <!-- Mobile App Development -->
+          <div class="service-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" style="background: rgba(113, 73, 198, 0.1); border-radius: 15px; padding: 2rem; text-align: center; transition: all 0.3s ease; cursor: pointer;">
+              <div class="service-icon" style="font-size: 3rem; color: #7149C6; margin-bottom: 1.5rem;">
+                  <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 class="service-title" style="font-size: 1.5rem; color: #7149C6; margin-bottom: 1rem;">Mobile Apps</h3>
+              <p class="service-description" style="font-size: 0.9rem; line-height: 1.6; color: #cccccc;">Native and cross-platform mobile application development. User-friendly apps with smooth performance.</p>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- Services -->
+
+    <!-- About -->
+    <div class="skills-section">
+      <h1 class="text-skills text-center">Skills</h1>
+      <div class="skills-grid" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; justify-items: center; max-width: 600px; margin: auto;">
+          <!-- Frontend -->
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" style="width: 50px;"></div>
+  
+          <!-- Styling & Tools -->
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" title="Tailwind CSS" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" style="width: 50px;"></div>
+  
+          <!-- Backend & Database -->
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" title="SQL" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase" style="width: 50px;"></div>
+  
+          <!-- Programming Languages -->
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" style="width: 50px;"></div>
+  
+          <!-- DevOps & Version Control -->
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" style="width: 50px;"></div>
+  
+          <!-- Development Tools -->
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" style="width: 50px;"></div>
+          <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" title="Android Studio" style="width: 50px;"></div>
+      </div>
+  </div>
+  
+  
+  
+    <!-- About -->
+
+    <!-- Kelas -->
+    <div class="kategori" id="kategori">
+      <div class="container">
+        <p class="text-activity activity-center">~</p>
+        <h1 class="text-kategori text-center">Projects</h1>
+        <div class="box-kategori">
+          <div class="box">
+            <img src="assets/kelasCoding.jpg" alt="" />
+            <h3>Cashier Application</h3>
+            <p>A cashier application for Waroeng Rembug using native PHP.</p>
+            <button>Explore ➜</button>
+          </div>
+          <div class="box">
+            <img src="assets/kelasCoding.jpg" alt="" />
+            <h3>Real Estate Website</h3>
+            <p>A real estate website using native PHP.</p>
+            <button>Explore ➜</button>
+          </div>
+          <div class="box">
+            <img src="assets/kelasCoding.jpg" alt="" />
+            <h3>Attendance Website</h3>
+            <p>A student attendance website built with React JS.</p>
+            <button>Explore ➜</button>
+          </div>
+          <div class="box">
+            <img src="assets/kelasCoding.jpg" alt="" />
+            <h3>Movie Review Application</h3>
+            <p>An application for giving reviews and ratings for movies.</p>
+            <button>Explore ➜</button>
+          </div>
+          <div class="box">
+            <img src="assets/kelasCoding.jpg" alt="" />
+            <h3>Multi App Application</h3>
+            <p>An app including a calculator, temperature conversion, and more.</p>
+            <button>Explore ➜</button>
+          </div>
+          <div class="box">
+            <img src="assets/kelasCoding.jpg" alt="" />
+            <h3>CRUD Application</h3>
+            <p>A CRUD application with different logins for user and admin.</p>
+            <button>Explore ➜</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Kelas -->
+
+    <!-- Favorit -->
+    <div class="favorit" id="favorit">
+        <div class="container" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+          <p class="text-activity activity-center">!!!</p>
+          <h1 class="text-favorit text-center">Ongoing Project</h1>
+          <div class="box-favorit">
+            <div class="box">
+                <img src="assets/kelasCoding.jpg" alt="" />
+                <h3>School Website</h3>
+                <div class="price-button">                
+                <h2>Next.js</h2>
+                <button>Cek</button>
+              </div>
+              </div>
+              <div class="box">
+                <img src="assets/favoritFreelancer.jpeg" alt="" />
+                <h3>Quizz Application</h3>
+                <div class="price-button">
+                  <h2>Java</h2>
+                  <button>Cek</button>
+                </div>
+              </div>              
+              <div class="box">
+                <img src="assets/kelasEditing.jpeg" alt="" />
+                <h3>Book Manajement System</h3>
+                <div class="price-button">
+                <h2>Java</h2>
+                <button>Cek</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Favorit -->
+
+    <!-- Benefit -->
+    <!-- <div class="benefit" id="benefit">
+      <div class="container"> 
+        <p class="text-activity activity-center">Why Chose Us</p>
+        <h1 class="text-benefit text-center">Benefit Yang Akan Anda Terima</h1>
+        <div class="box-benefit">
+            <div class="box">
+              <h2>Harga Terjangkau</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Sertifikat</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Mentor Expert</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Konsultasi</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Portofolio</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Magang</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Sekali Bayar</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Studi Kasus</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            <div class="box">
+              <h2>Video Learning</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, aut!</p>
+            </div>
+            </div>
+          </div>
+        </div> -->
+    <!-- Benefit -->
+
+    <!-- Testimoni-->
+    <div class="testimoni" id="testimoni">
+      <div class="container">
+        <p class="text-activity activity-center">~~~~</p>
+        <h1 class="text-testimoni text-center">experience and certificates</h1>
+        <div class="box-testimoni">
+          <div class="box" data-aos="zoom-in" data-aos-duration="900">
+            <div class="testimonial-item">
+            <img src="assets/yayasan.png" alt="Foto Profil" class="foto-profile">
+              <div class="testimonial-info">
+                <div class="name-job">
+                  <h4>Yayasan Internet Indonesia</h4>
+                </div>
+                <p class="comment">Building Android applications without coding using Kodular at Rumah Teknologi for 3 months.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in" data-aos-duration="900">
+            <div class="testimonial-item">
+              <img src="assets/edu.jpg" alt="Foto Profil" class="foto-profile">
+              <div class="testimonial-info">
+                <div class="name-job">
+                  <h4>CV.Edusoft Center</h4>
+                 
+                </div>
+               
+                <p class="comment">Internship for 6 months as a Web Developer, Content Creator, and Digital Agency professional. </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in" data-aos-duration="900">
+            <div class="testimonial-item">
+              <img src="assets/kihajar.png" alt="Foto Profil" class="foto-profile">
+              <div class="testimonial-info">
+                <div class="name-job">
+                  <h4>Kihajar STEM</h4>
+                </div>
+            
+                <p class="comment">Finalist in Kihajar STEM, ranked in the top 5 at the Central Java provincial level.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in" data-aos-duration="900">
+            <div class="testimonial-item">
+              <img src="assets/nusan.jpg" alt="Foto Profil" class="foto-profile">
+              <div class="testimonial-info">
+                <div class="name-job">
+                  <h4>PT. Solusi Teknologi Nusantara (Nusantech)</h4>
+                </div>
+            
+                <p class="comment">Joined an additional class in collaboration with schools, guided by Nusantech.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="box" data-aos="zoom-in" data-aos-duration="900">
+            <div class="testimonial-item">
+              <img src="assets/nusan.jpg" alt="Foto Profil" class="foto-profile">
+              <div class="testimonial-info">
+                <div class="name-job">
+                  <h4>PT. Solusi Teknologi Nusantara (Nusantech)</h4>
+                </div>
+            
+                <p class="comment">Participated in the NDP (Nusa Development Program) industry class.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in" data-aos-duration="900">
+            <div class="testimonial-item">
+              <img src="assets/nusan.jpg" alt="Foto Profil" class="foto-profile">
+              <div class="testimonial-info">
+                <div class="name-job">
+                  <h4>PT. Solusi Teknologi Nusantara (Nusantech)</h4>
+                </div>
+            
+                <p class="comment">Completed a course in Node.js and React.js to enhance backend and frontend development skills.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimoni-->
+
+    <!-- Daftar -->
+    <div class="daftar">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
+        <div class="content">
+        <div class="rocket">
+          <img src="assets/karakter.png">
+        </div>
+          <div class="text">
+          <h2>Ready to Build Your Future?</h2>
+          <!-- <p>Gabung bersama kami di Michiko Academy untuk meraih masa depan yang sukses.</p> -->
+        </div>
+        <button class="button" onclick="redirectToProfile()">Click Me</button>
+        </div>
+      </div>
+    </div>
+    <!-- Daftar -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="box-footer">
+          <div class="box">
+            <h2>Mentari Dwi</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam eius rerum quisquam perspiciatis obcaecati, quasi temporibus aperiam iusto aliquam doloremque.</p>
+          </div>
+          <div class="box">
+            <h3>Menu</h3>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#kategori">Kategori</a>
+            <a href="#daftar">Daftar</a>
+          </div>
+          <div class="box">
+            <p>&copy; Copyright by <span>Mentari </span> All Rights Reserved 2023, Indonesia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+        <script>
+          // Inisialisasi AOS dengan offset 0 untuk trigger tepat waktu
+          AOS.init({ offset: 0, });
+      </script>
+  </body>
+</html>
